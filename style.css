@@ -1,0 +1,71 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+background:  url(wp14867630-4k-dark-night-wallpapers.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.box{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 90vh;
+
+
+}
+.container{
+    width:  350px;
+    display : flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+span{
+    color: white;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+header{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.inputbox input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    border-radius: 30px;
+    color:aliceblue;
+    font-size: 15px;
+    padding: 0 0 0 45px;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    margin: 10px;
+}
+.submit input{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color:black;
+    background: rgba(225, 225, 225, 0.7);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.top button{
+  
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.3);
+   
+}
