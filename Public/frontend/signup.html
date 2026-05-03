@@ -3,31 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create New Account</title>
+  <title>Sign Up Page</title>
+  <!-- Correct relative path to CSS -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <div class="box">
-    <h1>Create New Account</h1>
-    <div class="form">
-      <form action="">
-        <input type="text" placeholder="username"><br>
-        <input type="tel" placeholder="number"><br>
-        <input type="email" placeholder="email address"><br>
-        
-        <div class="gender"><br>
-          <header>Gender</header>
-          <label>Male <input type="radio" name="gender" value="male"></label><br>
-          <label>Female <input type="radio" name="gender" value="female"></label><br>
-          <label>Other <input type="radio" name="gender" value="other"></label><br>
-        </div>
+  <div class="login-container">
+    <h1>Create Account</h1>
+    <form action="signup" method="POST">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
 
-        <label for="age"><input type="date"> age</label><br>
-        <input type="submit" class="submit" value="createaccount"> 
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
 
-        <!-- Correct relative link -->
-        <button type="button" onclick="window.location.href='index.html'">Login Page</button>
-      </form>
-    </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <div class="input-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+
+      <button type="submit">Sign Up</button>
+
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </form>
   </div>
 </body>
 </html>

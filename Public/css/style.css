@@ -1,71 +1,81 @@
-*{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-body{
-background:  url(wp14867630-4k-dark-night-wallpapers.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-attachment: fixed;
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.box{
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 90vh;
-
-
-}
-.container{
-    width:  350px;
-    display : flex;
-    flex-direction: column;
-    padding: 0 15px 0 15px;
-}
-span{
-    color: white;
-    font-size: small;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0 10px 0;
-}
-header{
-    color: white;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0 10px 0;
+body {
+  font-family: Arial, sans-serif;
+  background: url(wp14867630-4k-dark-night-wallpapers.webp);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.inputbox input{
-    height: 45px;
-    width: 87%;
-    border: none;
-    border-radius: 30px;
-    color:aliceblue;
-    font-size: 15px;
-    padding: 0 0 0 45px;
-    background: rgba(255, 255, 255, 0.2);
-    outline: none;
-    margin: 10px;
+.login-container {
+  background: #2c2c3e;
+  padding: 30px;
+  border-radius: 8px;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
-.submit input{
-    border: none;
-    border-radius: 30px;
-    font-size: 15px;
-    height: 45px;
-    width: 100%;
-    outline: none;
-    color:black;
-    background: rgba(225, 225, 225, 0.7);
-    cursor: pointer;
-    transition: 0.3s;
+
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
-.top button{
-  
-    border-radius: 30px;
-    background: rgba(255, 255, 255, 0.3);
-   
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #4cafef;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3a9bdc;
+}
+
+.extra-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.extra-links a {
+  color: #4cafef;
+  text-decoration: none;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}
+
+p {
+  text-align: center;
+  margin-top: 15px;
 }
