@@ -1,2 +1,2 @@
-const user = require('../store/data')
+const users = require('../store/data')
 users.push({ username: "prabhat", password: "123" })
